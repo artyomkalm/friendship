@@ -1,5 +1,6 @@
 defmodule Friendship.Router do
   use Friendship.Web, :router
+  use ExAdmin.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,6 +14,7 @@ defmodule Friendship.Router do
     plug :accepts, ["json"]
   end
 
+  admin_routes  :admin
   scope "/", Friendship do
     pipe_through :browser # Use the default browser stack
 

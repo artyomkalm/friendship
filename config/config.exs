@@ -31,3 +31,14 @@ config :phoenix, :generators,
 config :phoenix, :template_engines,
   slim: PhoenixSlime.Engine,
   slime: PhoenixSlime.Engine
+
+config :ex_admin, 
+  repo: Friendship.Repo,
+  module: Friendship,
+  modules: [
+    Friendship.ExAdmin.Dashboard
+  ]
+
+config :xain, :quote, "'"
+config :xain, :after_callback, {Phoenix.HTML, :raw}
+
