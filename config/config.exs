@@ -36,9 +36,14 @@ config :ex_admin,
   repo: Friendship.Repo,
   module: Friendship,
   modules: [
-    Friendship.ExAdmin.Dashboard
+    Friendship.ExAdmin.Dashboard,
+    Friendship.ExAdmin.User
   ]
 
 config :xain, :quote, "'"
 config :xain, :after_callback, {Phoenix.HTML, :raw}
+
+config :passport,
+  resource: Friendship.User,
+  repo: Friendship.Repo
 

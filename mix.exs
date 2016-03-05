@@ -35,7 +35,8 @@ defmodule Friendship.Mixfile do
      {:phoenix_ecto, "~> 2.0"},
      {:phoenix_html, "~> 2.4"},
      {:phoenix_slime, "~> 0.5.0"},
-     {:ex_admin, github: "smpallen99/ex_admin"}, 
+     {:ex_admin, github: "smpallen99/ex_admin"},
+     {:passport, "~> 0.0.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"}]
